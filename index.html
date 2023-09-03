@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Jupally Raviteja Rao</div> 
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Raviteja rao</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#Skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/prfoile-pic.jpeg" alt="Raviteja rao profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Jupally Raviteja Rao</h1>
+        <p class="section__text__p2">Fullstack and Game Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/raviteja-rao-jupally-895686254/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Ravitejarao333'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/Skills.png"
+                alt="Skills icon"
+                class="icon"
+              />
+              <h3>Achievements</h3>
+              <p><h5>IEEE Paper</h5><br />Succsefully authored and submitted an IEEE paper on Immersive Technologuies and Engineering metholodogies which was accepted by various confernce</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <br />
+              <p>I am currently an Information Technology undergraduate student at IIIT Bhubaneswar</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              As a Final Year IT student with a passion for web development, game designing, and immersive technologies, I am a dynamic and highly-motivated individual dedicated to continuous learning and self-improvement. With proven leadership capabilities, I have successfully led multiple Senior class projects to completion, showcasing my ability to take initiative and tackle new challenges.
+
+My proficiency in a range of modern technologies positions me as a versatile team player ready to contribute innovative solutions to the digital landscape. With a relentless learning mindset, I am eager to leverage my problem-solving skills and technical expertise as a Software Engineer.
+
+I thrive on seeking out new challenges and constantly expanding my knowledge base to stay at the forefront of technological advancements.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#Skills'"
+      />
+    </section>
+    <section id="Skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="Skills-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="Skills-sub-title">Fullstack Development Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Frontend Development</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Working Experience</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java script</h3>
+                  <p>Skillsd</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="Skills-sub-title">Game Decelopment Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C#</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Unity</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ASP.NET</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Blender</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Skills-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="Skills-sub-title">Soft Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Time Management </h3>
+                  <p>Competent</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>problem-solving</h3>
+                  <p>Working Experience</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Communication</h3>
+                  <p>Proficient</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="Skills-sub-title">Other Technical Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"  
+                />
+                <div>
+                  <h3>DSA</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>OOPS in C++</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Cloud Computing<h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />  
+    </section>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="Skills-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="Skills-sub-title project-title">YouTube Clone</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Ravitejarao333/StreamVib.git'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Ravitejarao333/StreamVib.git'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src=".\assets\projrct-3.gif"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="Skills-sub-title project-title">Zombie Hunt: First Encounter</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Ravitejarao333/Zombie-Hunt-First-Encounter.git'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Ravitejarao333/Zombie-Hunt-First-Encounter.git'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"  
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="Skills-sub-title project-title">CRED Operations</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Ravitejarao333/MERNDataManagement.git'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn" 
+                onclick="location.href='https://github.com/Ravitejarao333/MERNDataManagement.git'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">ravitejajupalli333@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/raviteja-rao-jupally-895686254/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Raviteja Rao. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
